@@ -134,7 +134,8 @@ const transformAST = {
       visibility,
       modifiers,
       isConstructor: true,
-      stateMutability
+      stateMutability,
+      ctx
     }
   },
 
@@ -182,7 +183,8 @@ const transformAST = {
       visibility,
       modifiers,
       isConstructor: name === this._currentContract,
-      stateMutability
+      stateMutability,
+      ctx
     }
   },
 
